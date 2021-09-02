@@ -1,0 +1,100 @@
+.table {
+  .ag-theme-alpine {
+    .ag-root-wrapper {
+      border: none;
+    }
+
+    .ag-header {
+      border: none;
+      border-radius: 5px;
+      background: #fafcff;
+    }
+
+    .ag-header-cell,
+    .ag-header-group-cell {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .ag-header-cell-text {
+      color: #8287a6;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+    }
+
+    .ag-paging-panel,
+    .ag-header-row {
+      min-height: 50px;
+      border-top: none;
+    }
+
+    .ag-row,
+    .ag-row:not(.ag-row-first) .ag-paging-panel {
+      border-top: none !important;
+      background: #fff;
+      border-bottom: 1px solid #edf2fa;
+    }
+
+    .ag-paging-description,
+    .ag-paging-row-summary-panel {
+      color: #8287a6;
+      font-size: 14px;
+      line-height: 17px;
+      font-style: normal;
+      font-weight: normal;
+
+      & span {
+        font-weight: normal;
+      }
+    }
+
+    .ag-paging-number,
+    .ag-paging-row-summary-panel-number {
+      color: #2b3851;
+    }
+
+    .ag-paging-row-summary-panel {
+      margin-right: auto;
+    }
+
+    .ag-cell {
+      display: inline-flex;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      border: none;
+
+      color: #2b3851;
+      font-size: 14px;
+      line-height: 17px;
+      font-style: normal;
+      font-weight: normal;
+
+      transition: color 0.3s ease, border-color 0.3s ease,
+        background-color 0.3s ease;
+    }
+
+    .ag-cell-focus,
+    .ag-cell-no-focus,
+    .no-border.ag-cell:focus,
+    .ag-ltr .ag-has-focus .ag-cell-focus:not(.ag-cell-range-selected) {
+      border: none !important;
+      outline: none;
+      background-color: #fafcff;
+      transition: color 0.3s ease, border-color 0.3s ease,
+        background-color 0.3s ease;
+    }
+
+    .ag-cell-highlight {
+      background-color: rgba($blue, 0.05) !important;
+    }
+
+    .ag-header-cell-label .ag-header-icon .ag-icon {
+      color: #223150;
+    }
+    .ag-header-cell-label .ag-header-icon.ag-sort-order {
+      display: none;
+    }
+  }
+}
