@@ -13,4 +13,14 @@ export class InstrumentsGateway {
 
     return res.data;
   }
+
+  static async Delete({ instrumentId }: SInstruments.Delete.Request) {
+    const res: SInstruments.Delete.Response = (
+      await axios.delete(`instruments/${instrumentId}`)
+    ).data;
+
+    if (res.error) Log.Error(res.error, true);
+
+    return res.data;
+  }
 }

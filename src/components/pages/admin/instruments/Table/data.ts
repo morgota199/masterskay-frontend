@@ -1,5 +1,13 @@
 import { moment } from '@/helpers/moment';
 import { IInstruments } from '~/api';
+import Action from '../Action/index.vue';
+
+const deleteInstrument = {
+  deleteInstrument: {
+    visible: false,
+    data: null as IInstruments.Join,
+  },
+};
 
 export const TableConfig = {
   columnDefs: [
@@ -68,6 +76,7 @@ export const TableConfig = {
       width: 160,
       menuTabs: [] as string[],
       cellStyle: { justifyContent: 'center' },
+      cellRendererFramework: Action,
     },
   ],
 
@@ -78,5 +87,6 @@ export const TableConfig = {
 };
 
 export const TableData = {
+  ...deleteInstrument,
   ...TableConfig,
 };

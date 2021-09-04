@@ -8,7 +8,7 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import { Heading } from '@/components/ui';
+  import { Heading } from '../../../../../components/ui';
 
   export default Vue.extend({
     components: { Heading },

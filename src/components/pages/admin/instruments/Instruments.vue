@@ -1,6 +1,5 @@
 <template>
   <div class="instruments">
-     
     <Table />
   </div>
 </template>
