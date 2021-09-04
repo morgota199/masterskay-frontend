@@ -2,7 +2,7 @@
   <div class="categories">
     <div class="categories__header">
       <Button icon-left="plus" @click="toggleModal(true)">
-        Create Category
+        Create
       </Button>
     </div>
     <Table />
