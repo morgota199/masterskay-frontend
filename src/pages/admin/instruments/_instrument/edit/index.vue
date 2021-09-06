@@ -2,16 +2,18 @@
   <Heading to="/">
     <template #title> Instrument Edit </template>
 
-    <template #tabs> </template>
+    <template #tabs>
+      <InstrumentEdit/>
+    </template>
   </Heading>
 </template>
 
 <script lang="ts">
   import Vue from 'vue';
-  import { Heading } from '../../../../../components/ui';
-
+  import { Heading } from '@/components/ui';
+  import { InstrumentEdit } from "@/components/pages";
   export default Vue.extend({
-    components: { Heading },
+    components: { Heading, InstrumentEdit },
   });
 </script>
 

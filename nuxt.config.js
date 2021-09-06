@@ -1,7 +1,6 @@
 import { svgSprite } from './src/helpers/svg-sprite/index';
 
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'masterskay-frontend',
     htmlAttrs: {
@@ -16,13 +15,13 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/scss/base/index',
     '~/assets/scss/helpers/index',
     '~/assets/scss/components/index',
     'node_modules/ag-grid-community/dist/styles/ag-grid.css',
-    // 'node_modules/@ag-grid-enterprise/all-modules/dist/styles/ag-theme-alpine.css',
+    'node_modules/filepond/dist/filepond.min.css',
+    'node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css',
   ],
 
   styleResources: {
@@ -31,25 +30,20 @@ export default {
       '~/assets/scss/variables/index.scss',
     ],
   },
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+
   plugins: [
     '~/plugins/workers.client.ts',
     '~/plugins/axios.ts',
     '~/plugins/ag-grid.client.ts',
+    '~/plugins/filepond.ts',
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-  ],
+  buildModules: ['@nuxt/typescript-build'],
 
   srcDir: 'src/',
 
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'cookie-universal-nuxt',
     '@nuxtjs/svg',
@@ -59,7 +53,6 @@ export default {
 
   svgSprite,
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     babel: {
       plugins: [

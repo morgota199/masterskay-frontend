@@ -10,6 +10,7 @@ export { default as Loader } from './Loader/index.vue';
 export { default as Heading } from './Heading/index.vue';
 export { default as Spinner } from './Spinner/index.vue';
 export { default as Tooltip } from './Tooltip/index.vue';
+export { default as FilePond } from './FilePond/index.vue';
 export { default as Dropdown } from './Dropdown/index.vue';
 export { default as Container } from './Container/index.vue';
 export { default as PushNotification } from './PushNotification/index.vue';

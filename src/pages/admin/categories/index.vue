@@ -12,11 +12,13 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import { Categories, SubCategories } from '@/components/pages';
   import { store } from '~/store';
-  import { CategoryGateway } from '~/api/category';
+
+  import { CategoryGateway } from '@/api/category';
+  import { SubCategoryGateway } from '@/api/sub-category';
+
   import { Heading, Tabs } from '@/components/ui';
-  import { SubCategoryGateway } from '~/api/sub-category';
+  import { Categories, SubCategories } from '@/components/pages';
 
   export default Vue.extend({
     components: {

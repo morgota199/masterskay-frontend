@@ -2,16 +2,19 @@
   <Heading to="/">
     <template #title> Instrument Create </template>
 
-    <template #tabs> </template>
+    <template #tabs>
+      <InstrumentCreate />
+    </template>
   </Heading>
 </template>
 
 <script lang="ts">
   import Vue from 'vue';
   import { Heading } from '@/components/ui';
+  import { InstrumentCreate } from "@/components/pages"
 
   export default Vue.extend({
-    components: { Heading },
+    components: { Heading, InstrumentCreate },
   });
 </script>
 
